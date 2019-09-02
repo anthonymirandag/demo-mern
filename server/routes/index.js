@@ -1,0 +1,11 @@
+const { Router } = require('express')
+const api = Router()
+const user = require('./user')
+const login = require('./login')
+const category = require('./category')
+const foro = require('./foro')
+api.use('/user',user)
+api.use('/login',login)
+api.use('/category',category)
+api.use('/foro',foro)
+module.exports = api
